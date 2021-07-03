@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import {React, useEffect, useState} from 'react';
 import './App.css';
+import  CherecterList  from './components/CherecterList/CherecterList';
+// import { getAll } from './api/api'
+
 
 function App() {
+
+  const [list, setList] = useState('');
+
+ useEffect(() => {
+  fetch('https://rickandmortyapi.com/api/character')
+    .then(res=>{
+      return res.json();
+    })
+    .then(data => {
+      console.log(data.results)
+      setList(data.results)
+    });
+
+ }, []);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     {list && <CherecterList items={ list }/>}
+    </>
   );
-}
+};
 
 export default App;

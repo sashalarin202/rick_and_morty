@@ -1,0 +1,101 @@
+.CherecterItem {
+  display: flex;
+  width: 430px;
+  background-color: rgb(60, 62, 68);
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+
+
+.CherecterImage{
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.discription{
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.CherecterImage{
+  height: 230px;
+  width: 220px;
+}
+
+.discription_name{
+  font-size: 30px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.white {
+  color: white;
+}
+
+
+.type{
+  color: rgb(158, 158, 158);
+  font-size: 30px;
+}
+
+.type_discr{
+  margin-top: 30px;
+  font-size: 23px ;
+}
+
+
+.Cherecter_item_modal {
+  display: flex;
+  width: 600px;
+  background-color: rgb(60, 62, 68);
+  border-radius: 20px;
+}
+
+.CherecterImage_modal{
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.discription_modal{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.discription_name_modal{
+  font-size: 38px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.status_modal{
+  font-size: 25px;
+}
+
+.species-modal{
+  font-size: 25px;
+}
+
+.last_location{
+  color: rgb(158, 158, 158);
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.location{
+  font-size: 23px;
+  margin-bottom: 15px;  
+}
+.gender{
+  margin-top: 15px;
+  font-size: 30px;
+  color: white;
+}
