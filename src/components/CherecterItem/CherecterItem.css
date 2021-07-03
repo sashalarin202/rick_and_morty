@@ -6,6 +6,11 @@
   margin-bottom: 70px;
 }
 
+.CherecterItem:hover{
+  cursor: pointer;
+  background-color: rgb(92, 92, 92);
+  transition: 0.4s;
+}
 
 .CherecterImage{
   -webkit-border-top-left-radius: 20px;
