@@ -1,25 +1,12 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import './App.css';
 import  CherecterList  from './components/CherecterList/CherecterList';
-// import { getAll } from './api/api'
+import useList from './api/api'
 
 
 function App() {
 
-  const [list, setList] = useState('');
-
- useEffect(() => {
-  fetch('https://rickandmortyapi.com/api/character')
-    .then(res=>{
-      return res.json();
-    })
-    .then(data => {
-      console.log(data.results)
-      setList(data.results)
-    });
-
- }, []);
-
+  const [list] = useList();
 
   return (
     <>

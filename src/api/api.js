@@ -1,7 +1,22 @@
-let API_URL = 'https://rickandmortyapi.com/api/character';
+import { useState, useEffect } from "react";
 
-export async function getAll() {
-  let response = await fetch(API_URL)
-  let content = await response.json()
-  return console.log(content.results)
-}
+const useList = () => {
+  // 1
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    fetch('https://rickandmortyapi.com/api/character')
+      .then(res=>{
+        return res.json();
+      })
+      .then(data => {
+        console.log(data.results)
+        setList(data.results)
+      });
+  
+   }, []);
+  
+   return [list];
+};
+
+export default useList;
